@@ -129,6 +129,7 @@
   },
   "scripts": {
     "postinstall": "bower install",
+    "heroku-postbuild": "bower install",
     "protractor": "protractor ./spec/e2e/conf.js",
     "test": "TZ='UTC' NODE_OPTIONS=\"--max-old-space-size=4096\" jest --coverage --maxWorkers=2",
     "test:inspect": "TZ='UTC' NODE_OPTIONS=\"--inspect --max-old-space-size=4096\" INSPECT_MODE=true jest --runInBand --logHeapUsage 2>&1 | tee jestInspectOutput.txt",
